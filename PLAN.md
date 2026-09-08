@@ -1,127 +1,141 @@
 # Amazing Flowers Miami — Website Implementation Plan
 
 ## 1. Goal
-Create a polished, responsive marketing storefront for **Amazing Flowers Miami** that feels editorial and premium while keeping local-shop usefulness front and center. The supplied florist references are deliberately combined rather than copied:
+Create a polished, responsive storefront for **Amazing Flowers Miami** that combines the strongest ideas from the supplied florist references without copying their invented content or business details.
 
-- **Local florist utility:** immediate phone, directions, location, and service-area information.
-- **Modern commerce:** clear collection cards, featured arrangements, strong shop CTAs, and quick browsing paths.
-- **Editorial luxury:** oversized serif typography, warm neutral surfaces, restrained green/coral accents, and photography-led storytelling.
+The visual system merges three directions:
 
-The site is a static, fast-loading GitHub Pages application with no backend dependency.
+- **Local florist utility:** prominent call, directions, location, and service-area actions.
+- **Modern flower commerce:** a clean collection rhythm, compact occasion browsing, strong shop CTAs, and mobile-first conversion patterns.
+- **Editorial floral studio:** expressive serif typography, warm ivory/blush surfaces, botanical green, strong photography, and refined wedding/event storytelling.
+
+The site remains a static, fast-loading GitHub Pages application with no backend dependency.
 
 ## 2. Reference-to-interface mapping
-The three supplied references drive different parts of the finished UI:
 
 ### Local florist reference
-- prominent local identity and contact actions
-- call / directions / visit affordances
-- service information visible without entering the commerce site
-- studio/location section with real floral-shop photography
+Use for visual direction only:
+- immediate local identity
+- call and directions actions near the hero
+- visible location information without requiring a separate contact page
+- storefront / studio photography
+- compact mobile utility layout
+
+Do **not** copy its example phone number, hours, address, review text, or other placeholder facts.
 
 ### E-commerce florist reference
-- collection-first shopping structure
-- product-card rhythm and clear price anchors
-- direct shop CTAs routed to the existing Amazing Flowers Miami storefront
-- compact responsive navigation and mobile-first conversion flow
+Use for visual direction only:
+- slim dark-green announcement bar
+- restrained white header with centered navigation
+- large floral hero on a pale botanical background
+- horizontal occasion chips
+- compact 4-up collection rhythm on desktop and 2-up mobile cards
+- strong green CTA treatment
+- dense but calm footer hierarchy
+
+Do **not** copy claims such as a specific same-day cutoff, placeholder prices, fake products, ratings, or review names.
 
 ### Editorial floral studio reference
+Use for visual direction only:
 - high-contrast serif headlines
-- warm ivory/blush surfaces and botanical green
-- photography-led compositions with layered/overlapping cards
-- weddings/events storytelling and generous whitespace
+- burgundy/coral accent moments
+- cream paper-like surfaces
+- image-led composition with framed photography
+- wedding/event editorial modules
+- generous whitespace and fine divider lines
 
-The result should feel like **Amazing Flowers Miami**, not a clone of any one reference.
+Do **not** copy its studio name, contact details, testimonials, prices, or service claims.
 
-## 3. Brand and visual direction
-- Palette: deep botanical green, warm ivory, blush, muted clay/coral, and soft sage.
+## 3. Truthfulness guardrails
+The references are inspiration, not data sources. The implementation must not present invented facts as though they belong to Amazing Flowers Miami.
+
+Allowed business details are limited to information already independently established for the business:
+- **Amazing Flowers Miami**
+- **252 Sunny Isles Blvd, Suite 2B, Sunny Isles Beach, FL 33160**
+- **(305) 787-0700**
+- **info@amazingflowersmiami.com**
+- local delivery messaging for Sunny Isles / Aventura / greater Miami
+
+Specific opening hours, delivery cut-off times, customer names, review quotations, ratings, and exact product prices are intentionally omitted unless they can be sourced directly and kept current.
+
+## 4. Brand and visual direction
+- Palette: deep botanical green, warm ivory, blush, muted coral, wine, soft sage.
 - Typography: high-contrast editorial serif for headings + clean sans serif for interface/body copy.
-- Photography: real flower/florist photography remains the primary visual medium. Public stock photography is used for editorial sections; the official Amazing Flowers Miami storefront/product ecosystem is linked directly for commerce.
-- Motion: subtle and optional. A lightweight Three.js petal layer decorates the hero only and never replaces the photography or content.
-- Layout: generous whitespace, overlapping image cards, rounded but not overly playful surfaces, strong mobile stacking.
+- Photography: real flower/florist photography stays dominant.
+- Motion: subtle and optional. Three.js petals are decorative only.
+- Shape language: mostly squared editorial cards with modest rounding; avoid an overly app-like pill aesthetic.
+- Desktop density: compact enough to feel commerce-ready, but with editorial breathing room.
+- Mobile: hero first, horizontal occasion scroller, 2-up collection cards, clear utility actions.
 
-## 4. Information architecture
-1. Announcement bar
+## 5. Information architecture
+1. Local delivery/contact announcement bar
 2. Sticky navigation
-3. Hero: local luxury florist message, shop/call CTAs, real flower-shop photography, decorative Three.js petals
-4. Quick service strip: local delivery, weddings/events, corporate/lobby work, same-day inquiry
-5. Shop-by-style cards
-6. Featured arrangements / price anchors linking to the live Amazing Flowers Miami store
-7. Editorial craft section with real florist photography
-8. Weddings + events feature
-9. Local delivery/location panel with current address and directions
-10. Customer sentiment / trust block
-11. Floral gallery
-12. Conversion CTA + footer
-
-## 5. Content and business facts used
-Current public business information is reflected in the UI:
-- Amazing Flowers Miami
-- 252 Sunny Isles Blvd, Suite 2B, Sunny Isles Beach, FL 33160
-- (305) 787-0700
-- info@amazingflowersmiami.com
-- Service messaging: Sunny Isles / Aventura / Miami-area delivery
-
-Purchase and collection CTAs intentionally link to the existing Shopify storefront instead of pretending this static site has its own cart or payment flow.
+3. Hero: Miami-local message + real floral photograph + shop/call actions + decorative Three.js petals
+4. Local utility row: phone, address, directions
+5. Occasion / collection quick links
+6. Featured collections in a commerce-like card grid
+7. Local-delivery CTA banner
+8. Editorial craft / studio story section
+9. Weddings + events feature
+10. Visit-the-studio block with current contact details
+11. Non-testimonial trust / ordering guidance cards
+12. Floral inspiration gallery
+13. Conversion CTA + structured footer
 
 ## 6. Image strategy
-- Use real Pexels photography for shop, floral craft, wedding, orchid, white-floral, rose, and inspiration imagery.
+- Use real Pexels flower and florist photography documented in `PHOTO_CREDITS.md`.
+- Hero imagery is flower-forward; studio imagery appears in supporting sections.
 - Use descriptive alt text and lazy loading below the fold.
-- Keep image URLs centralized in markup so they can later be replaced with first-party photography without redesigning components.
-- Maintain a `PHOTO_CREDITS.md` file documenting the editorial photo sources.
-- Generated flower imagery is optional; the production concept intentionally keeps real photography dominant.
+- Generated floral imagery remains optional and supplementary; it must not replace real photography across the site.
 
 ## 7. Three.js usage
-Three.js is limited to a small decorative hero canvas:
+Three.js is limited to a decorative hero canvas:
 - translucent petal sprites
 - slow drift/rotation
 - mild pointer parallax
 - disabled for `prefers-reduced-motion`
 - hidden from assistive technology
 
-The site remains fully usable if Three.js/CDN loading fails.
+The page remains fully usable if Three.js or its CDN fails.
 
 ## 8. Accessibility and UX
 - Semantic landmarks and heading order
 - Keyboard-accessible mobile menu
 - Visible focus states
-- `aria` labels for icon-only buttons
-- High-contrast CTA styles
-- Responsive layout from ~320px through wide desktop
+- High-contrast buttons
+- Responsive from ~320px through wide desktop
 - Reduced-motion support
-- External commerce links clearly behave as links, not fake add-to-cart buttons
+- External commerce links behave as real links rather than fake add-to-cart controls
+- No fabricated testimonial UI
 
 ## 9. Technical implementation
 Static site files:
 - `index.html`
-- `styles.css`
+- `styles-v2.css` — active reference-refined visual system
 - `app.js`
 - `PLAN.md`
 - `PHOTO_CREDITS.md`
 - `.github/workflows/pages.yml`
 
-No build step is required. Relative CSS/JS paths keep the site compatible with GitHub project Pages paths.
+No build step is required. Relative asset paths keep the site compatible with GitHub project Pages.
 
 ## 10. Deployment
-GitHub's official Pages workflow is configured to:
-- trigger on pushes to `main`
-- upload the repository as a Pages artifact
-- deploy via `actions/deploy-pages`
+GitHub Pages deployment is triggered automatically on pushes to `main` using the official Pages workflow.
 
-The published project URL is:
+Published project URL:
 
 `https://prithiraj.github.io/Amazing_Flowers_Miami/`
 
 ## 11. Acceptance checklist
-- [x] Design plan documented in Markdown
-- [x] Supplied design references mapped to concrete UI decisions
-- [x] Responsive homepage implemented
-- [x] Real photography used throughout
-- [x] Three.js decorative hero layer implemented as progressive enhancement
-- [x] Current location/contact CTAs implemented
-- [x] Commerce CTAs link to the existing Amazing Flowers Miami storefront
-- [x] Photo credits documented
-- [x] GitHub Pages workflow added
-- [x] Deployment verified
+- [x] Additional supplied references mapped to concrete UI decisions
+- [x] Truthfulness guardrails documented
+- [x] Refined responsive homepage implemented
+- [x] Real photography remains dominant
+- [x] Mobile 2-up commerce rhythm implemented
+- [x] Local call/address/directions utility implemented
+- [x] Fake reviews and invented prices removed
+- [x] Three.js remains decorative progressive enhancement
+- [ ] GitHub Pages deployment re-verified after refinement
 
 ## 12. Implementation status
-**Complete and published.** Future pushes to `main` are automatically redeployed to GitHub Pages.
+**Implementation pushed to `main`.** GitHub Pages deployment verification is the final step.
