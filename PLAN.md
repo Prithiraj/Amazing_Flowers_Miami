@@ -7,7 +7,7 @@ Create a polished, responsive marketing storefront for **Amazing Flowers Miami**
 - **Modern commerce:** clear collection cards, featured arrangements, and strong shop CTAs.
 - **Editorial luxury:** oversized serif typography, warm neutral surfaces, restrained green/coral accents, and photography-led storytelling.
 
-The site will be a static, fast-loading GitHub Pages application with no backend dependency.
+The site is a static, fast-loading GitHub Pages application with no backend dependency.
 
 ## 2. Brand and visual direction
 - Palette: deep botanical green, warm ivory, blush, muted clay/coral, and soft sage.
@@ -20,7 +20,7 @@ The site will be a static, fast-loading GitHub Pages application with no backend
 1. Announcement bar
 2. Sticky navigation
 3. Hero: local luxury florist message, shop/call/directions CTAs, real flower-shop photography, decorative Three.js petals
-4. Quick service chips: same-day delivery, weddings/events, corporate/lobby work, local delivery
+4. Quick service chips: local delivery, weddings/events, corporate/lobby work, same-day inquiry
 5. Shop-by-style cards
 6. Featured arrangements / price anchors linking to the live Amazing Flowers Miami store
 7. Editorial craft section with real florist photography
@@ -28,7 +28,7 @@ The site will be a static, fast-loading GitHub Pages application with no backend
 9. Local delivery/location panel with current address and directions
 10. Customer sentiment / trust block
 11. Floral gallery
-12. Newsletter-style CTA + footer
+12. Conversion CTA + footer
 
 ## 4. Content and business facts used
 Current public business information is reflected in the UI:
@@ -48,7 +48,7 @@ Purchase and collection CTAs intentionally link to the existing Shopify storefro
 
 ## 6. Three.js usage
 Three.js is limited to a small decorative hero canvas:
-- simple translucent petal geometry
+- translucent petal sprites
 - slow drift/rotation
 - mild pointer parallax
 - disabled for `prefers-reduced-motion`
@@ -78,20 +78,20 @@ Static site files:
 No build step is required. Relative CSS/JS paths keep the site compatible with GitHub project Pages paths.
 
 ## 9. Deployment
-Use GitHub's official Pages workflow:
+GitHub's official Pages workflow is configured to:
 - trigger on pushes to `main`
 - upload the repository as a Pages artifact
 - deploy via `actions/deploy-pages`
 
-If GitHub Pages has not yet been enabled for this repository, the repository owner must set **Settings → Pages → Source → GitHub Actions** once; subsequent pushes deploy automatically.
+Initial deployment completed successfully in GitHub Actions on 2026-09-08 (workflow run #1).
 
 ## 10. Acceptance checklist
 - [x] Design plan documented before implementation
-- [ ] Responsive homepage implemented
-- [ ] Real photography used throughout
-- [ ] Three.js decorative hero layer implemented
-- [ ] Current location/contact CTAs implemented
-- [ ] Commerce CTAs link to the existing Amazing Flowers Miami storefront
-- [ ] Photo credits documented
-- [ ] GitHub Pages workflow added
-- [ ] Deployment verified
+- [x] Responsive homepage implemented
+- [x] Real photography used throughout
+- [x] Three.js decorative hero layer implemented
+- [x] Current location/contact CTAs implemented
+- [x] Commerce CTAs link to the existing Amazing Flowers Miami storefront
+- [x] Photo credits documented
+- [x] GitHub Pages workflow added
+- [x] Deployment verified
