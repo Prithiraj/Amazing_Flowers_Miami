@@ -126,6 +126,8 @@ Published project URL:
 
 `https://prithiraj.github.io/Amazing_Flowers_Miami/`
 
+The reference-refined implementation was deployed successfully on 2026-09-08 via GitHub Pages workflow run #10. This documentation update triggers a final equivalent redeploy.
+
 ## 11. Acceptance checklist
 - [x] Additional supplied references mapped to concrete UI decisions
 - [x] Truthfulness guardrails documented
@@ -135,7 +137,7 @@ Published project URL:
 - [x] Local call/address/directions utility implemented
 - [x] Fake reviews and invented prices removed
 - [x] Three.js remains decorative progressive enhancement
-- [ ] GitHub Pages deployment re-verified after refinement
+- [x] GitHub Pages deployment re-verified after refinement
 
 ## 12. Implementation status
-**Implementation pushed to `main`.** GitHub Pages deployment verification is the final step.
+**Complete and published.** Future pushes to `main` redeploy automatically through GitHub Pages.
