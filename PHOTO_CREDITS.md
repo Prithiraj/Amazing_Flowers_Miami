@@ -1,21 +1,15 @@
 # Photo credits
 
-The site intentionally uses real photography as the primary visual medium. The editorial/demo photography below is sourced from Pexels and is free to use under the Pexels license. These images can later be swapped for first-party Amazing Flowers Miami photography without changing the layout.
+The site uses real photography as the primary visual medium. Editorial/demo photography is sourced from Pexels and can later be replaced with first-party Amazing Flowers Miami photography without changing the layout.
 
 - Felix Young — Florist arranging flowers in a sunlit shop interior  
   https://www.pexels.com/photo/florist-arranging-flowers-in-a-sunlit-shop-interior-30000215/
-- Shai Kha — Pink roses in vase  
-  https://www.pexels.com/photo/pink-roses-in-vase-16192060/
 - Alina Shvets — Roses bouquet in a vase  
   https://www.pexels.com/photo/roses-bouquet-in-a-vase-7185245/
 - Lubomir Satko — White orchids arrangement on white vase  
   https://www.pexels.com/photo/white-orchids-arrangement-on-white-vase-8671997/
-- Taylor Thompson — Flowers bouquet in vase  
-  https://www.pexels.com/photo/flowers-bouquet-in-vase-20527079/
 - Mehmet Turgut Kirkgoz — Bouquet of pink roses in a vase  
   https://www.pexels.com/photo/bouquet-of-pink-roses-in-a-vase-18807976/
-- Mikhail Nilov — White orchids in a glass vase  
-  https://www.pexels.com/photo/white-flowers-in-a-glass-vase-9393917/
 - Matheus Bertelli — Flower bouquets in vases  
   https://www.pexels.com/photo/flower-bouquets-in-vases-17001797/
 - Aurore — White flowers in vase  
@@ -43,12 +37,11 @@ The site intentionally uses real photography as the primary visual medium. The e
 
 ## Business links
 
-The page links to the live Amazing Flowers Miami storefront for current product inventory, availability, and pricing:
+Current products, availability and pricing are intentionally delegated to the official storefront:
 
 https://amazingflowersmiami.com/
 
-Current public contact/location details used in the concept:
-
+Business details used in the concept:
 - 252 Sunny Isles Blvd, Suite 2B, Sunny Isles Beach, FL 33160
 - (305) 787-0700
 - info@amazingflowersmiami.com
