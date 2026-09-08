@@ -94,7 +94,6 @@
   import('https://cdn.jsdelivr.net/npm/three@0.165.0/build/three.module.js')
     .then((THREE) => initPetals(THREE))
     .catch(() => {
-      // The decorative layer is progressive enhancement. The site is complete without it.
       canvas.style.display = 'none';
     });
 
